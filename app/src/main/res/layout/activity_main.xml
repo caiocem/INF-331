@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_above="@id/editTextNumber"
+        android:layout_marginBottom="100dp"
+        android:layout_alignStart="@id/editTextNumber"
+        android:tag="nome"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="196dp" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:tag="idade"
+        android:layout_toLeftOf="@id/editTextNumberDecimal"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@id/editTextNumberDecimal"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:tag="altura"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="344dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:tag="peso"
+        android:layout_toRightOf="@id/editTextNumberDecimal"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@id/editTextNumberDecimal"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="276dp"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altura(metro)"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/editTextNumberDecimal"
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="303dp"
+        tools:layout_editor_absoluteY="328dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/editTextTextPersonName"
+        android:layout_alignStart="@id/editTextTextPersonName"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="163dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso(kg)"
+        android:textSize="20sp"
+        android:layout_alignEnd="@id/editTextNumberDecimal2"
+        android:layout_above="@id/editTextNumberDecimal2"
+
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idade"
+        android:textSize="20sp"
+        android:layout_alignStart="@id/editTextNumber"
+        android:layout_above="@id/editTextNumber"
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="327dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relatório Nutricional"
+        android:onClick="GerarRelatorio"
+        android:layout_below="@id/editTextNumberDecimal2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
